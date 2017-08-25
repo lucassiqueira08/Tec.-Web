@@ -1,8 +1,26 @@
-********** COLOQUEM O NOME DA PG E QUAL A FUN��O *****************
+********** COLOQUEM O NOME DA PG E QUAL A FUNÇÃO *****************
 
-indexsi.html - Pagina do curso de Sistemas da Informa��o
+***** Home ****** 
+
+***** Lista de Cursos ****
 
 
+**** Paginas dos Cursos ****
+indexsi.html - Pagina do curso de Sistemas da Informação
+indexadm.html - Pagina do curso de Administração
+indexads.html - Pagina do curso de Analise e Desenvolvimento de Sistemas
+indexbd.html - Pagina do curso de Banco de Dados
+indexgti.html - Pagina do curso de Gestão da Tecnologia da Informação
+indexjd.html - Pagina do curso de Jogos Digitais
+indexpg.html - Pagina do curso de Processos Gerenciais
+indexpm.html - Pagina do curso de Produção Multimidia
+indexrc.html - Pagina do curso de Redes de Computadores
+
+***** Disciplinas *****
+
+
+
+***** Noticias ******
 
 
 
