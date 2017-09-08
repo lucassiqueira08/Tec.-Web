@@ -4,3 +4,7 @@ class="barra_header" - Classe da Barra do Header
 class = "botao_header" - Classe dos botões do header
 class="texto_botao_header" - Classe do texto dos botões do header
 class = "imgprincipal" - Classe da imagem principal
+class="titulo_curso" - Classe dos titulos dos cursos
+class="grade" - Classe das grades dos cursos
+class="subgrade" - Classe do conteudo das disciplinas
+<ul class="titulosubgrade"> - Classe do titulo das disciplinas
