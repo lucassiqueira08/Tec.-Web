@@ -1,1 +1,50 @@
- 
+.imgheader{
+	float:left;
+	width: 100%;
+	height: 100px;
+}
+nav.header{ /*Define tamanhos pro Header*/
+	float: left;
+	width: 100%;
+	height: 30px;
+	background-color: black;
+	opacity: .0.3;
+} 
+ul.barra_header  {/*Deixa o sub-menu em baixo do menu*/
+	margin: 0px;	
+    padding: 0px;
+}
+li.botao_header {/*Configuração para o botao do menu*/
+	width: 330px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	list-style: none;
+
+}
+a.texto_botao_header {/*config o texto do botao*/
+  color: white;
+  text-decoration: none;
+  display: block;	
+  max-width: 100%;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2;  
+}
+a:hover.texto_botao_header {
+	background-color: #0A1B2B;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	
+}
+.imgprincipal{
+	text-align:center;
+}
+
+.imgfooter{
+	float:left;
+	width:100%;
+	height:100px;
+}

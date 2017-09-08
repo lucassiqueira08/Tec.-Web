@@ -1,0 +1,6 @@
+class = "imgheader" - Classe da Imagem do Header
+class="header" - Classe do Header
+class="barra_header" - Classe da Barra do Header
+class = "botao_header" - Classe dos botões do header
+class="texto_botao_header" - Classe do texto dos botões do header
+class = "imgprincipal" - Classe da imagem principal
