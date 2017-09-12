@@ -13,8 +13,9 @@ background-color:#D3D3D3;
             box-sizing: border-box;
 }
 /*-----------------------------------------------HEADER--------------------------------------------*/
+
 /*Botão do menu com a tela pequena*/
-#btnmenu{
+#btnreder{
 	display:none;
 }
 #btnredes{
@@ -24,6 +25,10 @@ background-color:#D3D3D3;
 	display: flex;
 	float: left;
 }
+.titulo_cursos{
+	margin-top:67px;
+}
+
 /*Div do Menu*/
 .header{
 	background-color: #424242;
@@ -43,7 +48,7 @@ background-color:#D3D3D3;
 	padding: 5px 10px;
 	width: 20px;
 	border-right: 1px solid #e8eaf6;
-
+	display: none;
 
 }
 /*hover menu tela pequena*/
@@ -51,7 +56,7 @@ background-color:#D3D3D3;
 	background-color: black;
 }
 /*Lista de itens do menu*/
-.menu ul {
+.reder ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -62,7 +67,7 @@ background-color:#D3D3D3;
 
 }
 /*formatação de cada item da lista*/
-.menu li a {
+.reder li a {
 	color: #e8eaf6;
 	text-decoration: none;
 	padding: 15px 20px;
@@ -72,10 +77,9 @@ background-color:#D3D3D3;
 	width: 50%;
 }
 /*Hover do menu*/
-.menu li a:hover{
+.reder li a:hover{
 	background-color: #8b8c8e;
-	width:100%;
-	/* criação do atributo auto nessa classe */
+}
 }
 /*-----------------------------------------------FIM HEADER--------------------------------------------*/
 
@@ -383,6 +387,7 @@ justify-content: center;
 /*--------------------------------------------FIM INDEX------------------------------------------------------*/
 
 /*----------------------------------------------INICIO FOOTER-----------------------------------------*/
+
 .rodape{
 	width: 100%;
 	display: inline-flex; 
@@ -438,6 +443,7 @@ justify-content: center;
 	text-align: center;
 	justify-content: center;
 	align-items: flex-end;
+	border:0;
 
 }
 .toppo{
@@ -446,32 +452,6 @@ justify-content: center;
 	padding: 0;
 	border: 0;
 
-}	
-@media (max-width: 550px){
-		.rodape{
-		/*	min-width: 550px; */
-		}
-
-		.redes{
-			display: none;
-		}
-
-		#btnredes:checked ~ .redes a{
-			margin-left: 20px;
-			width: 20%;
-			padding: 1.5px;
-		}
-		.siga{
-			cursor: pointer;
-			margin-top:-5px;
-		}
-		.siga h1{
-			font-weight: -100;
-			text-align: center;
-			border: 1px solid #e8eaf6;
-			padding: 1px;
-		}
-
 }
 
 /*--------------------------------------------PAGINA DOS CURSOS------------------------------------------------------*/
@@ -479,7 +459,17 @@ justify-content: center;
 /*define tamanho da div dos cursos*/
 .center_cursos{
 	width: 100%;
-	margin-top: 5%;
+}
+.titulo_cursos{   
+	
+	font-size: 3.2em;
+	color: #1e1e1e ;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	font-weight: bold;
+	text-align: center;
+
 }
 /*definições de cada botao dos cursos*/
 .cursos{
@@ -509,11 +499,76 @@ justify-content: center;
 	cursor: pointer;
 }
 
+/*-------------------PAGINA DAS DISCIPLINAS----------------*/
+.ClassImgDisciplinas{
+	text-align: center;
+	width:40%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+	text-align:center;
+}
+@media screen and (max-width: 1300px) {
+.ClassImgDisciplinas{
+
+	margin-left: 20px;
+	text-align: center;
+	width:40%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+
+}
+
+@media screen and (max-width: 480px) {
+.ClassImgDisciplinas{
+
+	width:100%;
+	text-align: center;
+
+}
+/*-------------------MEDIA QUERY PARA PAGINAS CURSOS / HEADER / FOOTER----------------*/
+
+@media (max-width: 550px){
+
+
+		#btnredes:checked ~ .redes {
+			display:flex;
+			padding-right: 100px;
+			
+		}
+		.siga{
+			cursor: pointer;
+			margin-top:-5px;
+		}
+		.siga h1{
+			font-weight: -100;
+			text-align: center;
+			border: 1px solid #e8eaf6;
+			padding: 1px;
+		}
+		.toppo{
+			display: flex;
+			margin: 0 80%;
+			padding: 0;
+			border: 0;			
+			transition: all .5s;
+			
+
+}
+
+}
+
 /*faz os botoes ficarem com 1 coluna quando o tamanho da tela for menor que 650px*/
 @media (max-width: 650px){	
 		.center_cursos{
 			display: flex;
 			flex-direction: column;
+		}
+
+		#btnredes:checked ~ .redes {
+			margin-right:25px;
+			
 		}
 
 }
@@ -524,47 +579,40 @@ justify-content: center;
 			float:left;
 
 		}
-		.menu ul{
+		.reder ul{
 			position: absolute;
 			background-color: #2f2f2f;
 			width: 70%;
 			flex-direction: column;
 			margin-top: -200%;
 		}
-		.menu li a{
+		.reder li a{
 			margin: .5px;
 			width: 85%;
 
 		}
-		#btnmenu:checked ~ .menu ul{
-			margin-top: 10%;
+		#btnreder:checked ~ .reder ul{
+			margin-top: 49px;
 
 		}
 		.siga h1{ 
 			font-size: 1.3em;
 		}
-		.redes{
-			padding-right: 2%; 
-		}
 
 }
 /*faz os botoes de cursos ficarem com 2 colunas quando o tamanho da tela for 900px*/
 @media (max-width: 900px){	
-	.cursos{
-		width:50%;
-	}
-	.redes{
-			display: flex;
-			flex-direction: row;
-			right: 120%;
-			z-index: 10;
-			height: 10%;
-			justify-content: center;
-			width: 0%; 
+		.cursos{
+			width:50%;
+		}
+		.redes{
+				display: flex;
+				flex-direction: row;
+				right: 120%;
+				z-index: 10;
 		}
 		.redes a img{
 			width: 50px;
-			margin-top: 15px;
 		}
 
 		#btnredes:checked ~ .redes{
@@ -613,34 +661,4 @@ justify-content: center;
 		margin-left: 25%;
 		width: 20%;
 	}
-}
-
-
-/*-------------------PAGINA DAS DISCIPLINAS----------------*/
-.ClassImgDisciplinas{
-	text-align: center;
-	width:40%;
-	padding-left: auto;
-	padding-right: auto;
-	margin-bottom:35px;
-	text-align:center;
-}
-@media screen and (max-width: 1300px) {
-.ClassImgDisciplinas{
-
-	margin-left: 20px;
-	text-align: center;
-	width:40%;
-	padding-left: auto;
-	padding-right: auto;
-	margin-bottom:35px;
-
-}
-
-@media screen and (max-width: 480px) {
-.ClassImgDisciplinas{
-
-	width:100%;
-	text-align: center;
-
 }

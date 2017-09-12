@@ -183,7 +183,7 @@ body{
 
 		#btnredes:checked ~ .redes {
 			display:flex;
-			padding-right: 2%;
+			padding-right: 100px;;
 			
 		}
 		.siga{
