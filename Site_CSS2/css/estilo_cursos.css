@@ -178,15 +178,13 @@
 	border: 0;
 
 }
-@media (max-width: 450px){
 	
-}	
 @media (max-width: 550px){
 
 
 		#btnredes:checked ~ .redes {
 			display:flex;
-			padding-right: 100px;;
+			padding-right: 150px;;
 			
 		}
 		.siga{
@@ -247,6 +245,7 @@
 		}
 		#btnreder:checked ~ .reder ul{
 			margin-top: 49px;
+			border-radius: 0 8px 8px 8px ;
 
 		}
 		.siga h1{ 
