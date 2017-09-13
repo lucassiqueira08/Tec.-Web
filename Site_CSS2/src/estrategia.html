@@ -1,37 +1,29 @@
-.<!DOCTYPE html>
-<html lang="pt-br"> <!-- define o idioma em que está sendo desenvolvida a aplicação-->
-
-<!-- INICIO -->
-<!-- Define padrão de escrita, aponta o css, script e define o Title da pagina -->
-   <head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
 		<title>FIT - Faculdade Impacta Tecnologia</title>
 		<meta charset="utf-8"/>
-		<link  rel="stylesheet " type="text/css" href="css/style.css"/>
-		<link href="css/fontes/titillium-web.css" rel="stylesheet" />
-		<link rel="shortcut icon" href="img/logo_title.png">
-		<script type="text/javascript" src="js/script.js"> </script>
+		<link  rel="stylesheet " type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/estilo_header_footer.css">
+		<link href="../css/fontes/titillium-web.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="../img/logo_title.png">
+		<script type="text/javascript" src="../js/script.js"> </script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-   <body >
-   
-   
-		<div class="header">
-		<input type="checkbox" id="btnmenu">
-		<label for="btnmenu">&#9776;</label>
-		<nav class="menu">
-
-			<a href="#" class="logo_header"><img src="img/logo.png" alt="Logo da Impacta"></a>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Cursos</a></li>
-				<li><a href="#">Noticias</a></li>
+<body>
+	<header class="header">
+		<input type="checkbox" id="btnreder">
+		<label for="btnreder">&#9776;</label>
+		<nav class="reder">
+			<a href="../index.html" class="logo_header"><img src="../img/logo.png" alt="Logo da Impacta"></a>
+			<ul class="topo_do_reder">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../src/cursos.html">Cursos</a></li>
+				<li><a href="../src/noticias.html">Noticias</a></li>
 			</ul>
 		</nav>
-		</div>
+	</header>
 
-
-
-	
 		<main class="conteudo">
 			
 			<!--INICIO DO CONTEUDO DO SITE-->
@@ -41,7 +33,7 @@
 					<br/>
 					<br/>
 					<h1 class="titulo">Graduação em Administração</h1>
-						<img class="ClassImgDisciplinas" src = "img/adm.jpg" >
+						<img class="ClassImgDisciplinas" src = "../img/adm.jpg" >
 				
 						<div class="conteudocaixadetexto">
 							<div class= "">
@@ -71,20 +63,26 @@
 				<h1>Siga a Impacta:</h1>
 			</label>
 
-			<div class="redes">				
-				<a href="#"><img src="img/yt.png" alt="youtube"></a>
-				<a href="#"><img src="img/fb.png" alt="facebook"></a>
-				<a href="#"><img src="img/tt.png." alt="twitter"></a>
-				<a href="#"><img src="img/ig.png." alt="instagram"></a>				
-			</div>
+		<div class="rodape">
+
+		<input type="checkbox" id="btnredes">
+		<label for="btnredes" class="siga">
+			<h1>Siga a Impacta:</h1>
+		</label>
+
+		<div class="redes">
 			
-			<img src="img/logo_title.png" alt="Template da Faculdade" class="toppo"/>		
-				
+			<a href="https://www.youtube.com/user/GrupoImpacta/"><img src="../img/yt.png" alt="youtube"></a>
+			<a href="https://www.facebook.com/FacImpacta/"><img src="../img/fb.png" alt="facebook"></a>
+			<a href="https://twitter.com/facimpacta/"><img src="../img/tt.png." alt="twitter"></a>
+			<a href="https://www.instagram.com/facimpacta/"><img src="../img/ig.png." alt="instagram"></a>
+			
 		</div>
+		
+		<img src="../img/logo_title.png" alt="Template da Faculdade" class="toppo"/>		
+			
+	</div>
 	<div class="footer_copy"><p>&copy; Impacta 2017. Todos os direitos reservados.</p></div>
 
-	
-	</body>
-
-
+</body>
 </html>

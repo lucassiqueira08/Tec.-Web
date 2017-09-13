@@ -3,7 +3,7 @@ body{
 	font-family: sans-serif;
 }
 /*Botão do menu com a tela pequena*/
-#btnmenu{
+#btnreder{
 	display:none;
 }
 #btnredes{
@@ -13,6 +13,10 @@ body{
 	display: flex;
 	float: left;
 }
+.titulo_cursos{
+	margin-top:67px;
+}
+
 /*Div do Menu*/
 .header{
 	background-color: #424242;
@@ -40,7 +44,7 @@ body{
 	background-color: black;
 }
 /*Lista de itens do menu*/
-.menu ul {
+.reder ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -51,7 +55,7 @@ body{
 
 }
 /*formatação de cada item da lista*/
-.menu li a {
+.reder li a {
 	color: #e8eaf6;
 	text-decoration: none;
 	padding: 15px 20px;
@@ -61,13 +65,12 @@ body{
 	width: 50%;
 }
 /*Hover do menu*/
-.menu li a:hover{
+.reder li a:hover{
 	background-color: #8b8c8e;
 }
 /*define tamanho da div dos cursos*/
 .center_cursos{
 	width: 100%;
-	margin-top: 5%;
 }
 .titulo_cursos{   
 	
@@ -162,6 +165,7 @@ body{
 	text-align: center;
 	justify-content: center;
 	align-items: flex-end;
+	border:0;
 
 }
 .toppo{
@@ -170,20 +174,17 @@ body{
 	padding: 0;
 	border: 0;
 
+}
+@media (max-width: 450px){
+	
 }	
 @media (max-width: 550px){
-		.rodape{
-			min-width: 550px;
-		}
 
-		.redes{
-			display: none;
-		}
 
-		#btnredes:checked ~ .redes a{
-			margin-left: 20px;
-			width: 20%;
-			padding: 1.5px;
+		#btnredes:checked ~ .redes {
+			display:flex;
+			padding-right: 100px;;
+			
 		}
 		.siga{
 			cursor: pointer;
@@ -195,6 +196,15 @@ body{
 			border: 1px solid #e8eaf6;
 			padding: 1px;
 		}
+		.toppo{
+			display: flex;
+			margin: 0 80%;
+			padding: 0;
+			border: 0;			
+			transition: all .5s;
+			
+
+}
 
 }
 
@@ -205,6 +215,11 @@ body{
 			flex-direction: column;
 		}
 
+		#btnredes:checked ~ .redes {
+			margin-right:25px;
+			
+		}
+
 }
 /*Faz com que o botão do menu apareça com telas menores que 550px*/
 @media (max-width: 700px) {
@@ -213,47 +228,40 @@ body{
 			float:left;
 
 		}
-		.menu ul{
+		.reder ul{
 			position: absolute;
 			background-color: #2f2f2f;
 			width: 70%;
 			flex-direction: column;
 			margin-top: -200%;
 		}
-		.menu li a{
+		.reder li a{
 			margin: .5px;
 			width: 85%;
 
 		}
-		#btnmenu:checked ~ .menu ul{
-			margin-top: 10%;
+		#btnreder:checked ~ .reder ul{
+			margin-top: 49px;
 
 		}
 		.siga h1{ 
 			font-size: 1.3em;
 		}
-		.redes{
-			padding-right: 2%; 
-		}
 
 }
 /*faz os botoes de cursos ficarem com 2 colunas quando o tamanho da tela for 900px*/
 @media (max-width: 900px){	
-	.cursos{
-		width:50%;
-	}
-	.redes{
-			display: flex;
-			flex-direction: row;
-			right: 120%;
-			z-index: 10;
-			height: 10%;
-			justify-content: center;
-			width: 0%; 
+		.cursos{
+			width:50%;
+		}
+		.redes{
+				display: flex;
+				flex-direction: row;
+				right: 120%;
+				z-index: 10;
 		}
 		.redes a img{
 			width: 50px;
-			margin-top: 15px;
 		}
 
 		#btnredes:checked ~ .redes{
