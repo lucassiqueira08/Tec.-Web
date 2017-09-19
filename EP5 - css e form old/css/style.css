@@ -1,0 +1,680 @@
+/*body{
+background-color:#D3D3D3;
+
+}
+*/
+
+/*-------------------------------------INICIO - RESET BASICO------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	color:#424242;
+}
+/*-----------------------------------------------HEADER--------------------------------------------*/
+
+/*-----------------------------------------------FIM HEADER--------------------------------------------*/
+
+
+
+/*----------------------------------------------------INICIO DO CONTEÚDO-----------------------------------------------------------------*/
+
+/*------------------------------------------FORMULARIO - PADRÃO---------------------------------------*/
+
+/* Configuração do formulario de cadastro */
+
+
+.FrmCadastro{
+width:100%;
+height:100%;
+float:left;
+
+}
+/*designer do input , para atingir um campo em especifico, basta colocar [type="tipo"] na frente da tag input*/
+.FrmCadastro input {
+width:40%;
+margin-left:20px;
+margin-right:20px;
+vertical-align:left;
+}
+.FrmCadastro label {
+
+float:left;
+vertical-align:left;
+}
+
+
+.FrmCadastro input[type="email"] {
+width:50%;
+margin-left:20px;
+margin-right:20px;
+vertical-align:left;
+}
+.FrmCadastro input[name="endereco"] {
+width:50%;
+margin-left:2px;
+margin-right:20px;
+vertical-align:left;
+}
+/*configuração do botão */
+.botao{
+margin-left:10px;
+margin-right:10px;
+margin-top:1px;
+
+}
+/* Define a configuração do campo input */
+.PgCadastro input{
+padding-left:20px;
+color:#292929;
+font-size:18px;
+background-color:#e9e9e9;
+border:1px solid #e9e9e9;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+height:40px;
+margin-bottom:20px;
+border-bottom:1px solid #ccc;
+border-left:1px solid #ccc;
+	
+}
+/*designer do botão*/
+.botao{
+border-radius:4px;
+color:#fff;
+padding:2px 40px;
+height:40px;
+margin-top:18px;
+opacity:0.9;
+margin-bottom:20px;
+cursor:pointer;
+background:#b22222;
+display:inline-block;
+border:none;
+border-bottom:1px solid #500707;
+border-right: 1px solid #500707;
+margin-left:50%;
+}
+.botao{
+opacity:1.0;
+transition:1s;
+}
+/* esta classe serve para pular linha de uma label para outra */
+.row{
+	clear:both;
+}
+
+/*----------------------------------LAYOUT PARA DESKTOP---------------------------------------------------*/
+
+/* Caixa de conteúdo do site */
+.caixadetexto {
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Definição de cor dos elementos dentro da caixa de texto em cada seção*/
+.sobre .titulo,
+.sobre p,
+.sobre h2 {
+	color: #424242;
+}
+.depoimentos .titulo,
+.depoimentos  p,
+.depoimentos h2 {
+	color: #424242;
+}
+.noticias .titulo,
+.noticias  p,
+.noticias h2 {
+	color: #424242;
+}
+.contato .titulo,
+.contato  p,
+.contato h2 {
+	color: #424242;
+}
+
+/*Definição do titulo da seção. EX: "SOBRE A IMPACTA*/
+.titulo {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-color: #424242;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+
+}
+
+/*Define as colunas divididas em 3 na pagina*/
+.caixadetextoNoticias{
+	text-align:center;
+	width:87%;	    
+	margin-left: 45px;
+	padding-left: 1px;
+	padding-right: 30px;
+	margin-bottom:35px;
+	
+}
+.conteudoNoticias{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20 0px;
+	font-family: 'titillium_web';
+	font-color:#424242;
+	margin-top:200px;
+	
+}
+.coluna3 {
+	
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+
+	width: 30.3333%;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	margin-bottom:70px;
+
+}
+.coluna4 {
+	
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+
+	width: 45%;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	margin-bottom:70px;
+
+}
+
+.coluna2 {
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	width: 40%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom:70px;
+	box-sizing: border-box;
+}
+
+.coluna2 img {
+	margin-bottom: 40px;
+}
+
+.img_depoimento{
+	border-radius: 50px;
+
+}
+
+.img_noticias{
+	border-radius:200px;
+	width:70%;
+}
+
+.texto_noticias{
+	font-size:16px;
+	margin-bottom:70px;
+}
+
+.img_campus{
+	width:40%;
+	float:left;
+}
+
+.textocontato{
+	float:right;
+	margin-left: 20px;
+	text-align: center-justify;
+	width: 30.3333%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+	
+.conteudo{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20 0px;
+	font-family: 'titillium_web';
+	font-color:#424242;
+	
+}
+
+.ClassImgPrincipal
+    {
+	text-align: center;
+	width:96%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+	text-align:center;
+	margin-top:100px;
+     } 
+	 
+section {
+ clear:both;
+}	
+	 
+
+/*----------------------------------LAYOUT PARA TABLET-------------------------------------------------*/
+	 
+/*query para tablet */
+@media screen and (max-width: 1300px) {
+
+.caixadetextoNoticias{
+	text-align:center;
+	width:85%;
+	margin-left: 74px;
+	padding-left: 25px;
+	padding-right: 8px;
+	margin-bottom:35px;
+}
+.ClassImgNoticias
+{ 
+	margin-left: 20px;
+	text-align: center;
+	width:60%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+
+}
+.img_noticias{
+	border-radius:200px;
+	width:50%;
+}
+.caixadetexto {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.textocontato{
+	float:right;
+	margin-left: 20px;
+	text-align: center-justify;
+	width: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.coluna3 {
+    float: left;
+	margin-left: 50px;
+	text-align: center;
+	width: 70%;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom:35px;
+	text-align: center;
+}
+.coluna4 {
+    float: center;
+	margin-left: 50px;
+	text-align: center;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom:35px;
+	text-align: center;
+}
+.coluna2{
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	width: 40%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom:70px;
+}
+	
+}	
+.titulo {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-color:#424242;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	
+
+
+}
+.ClassImgPrincipal
+{ 
+	margin-left: 20px;
+	text-align: center;
+	width:100%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+
+}
+
+}
+
+
+
+
+
+/*----------------------------------LAYOUT PARA CELULAR-------------------------------------------------*/
+
+/*query para celular*/
+@media screen and (max-width: 480px) {
+.ClassImgNoticas
+{
+	width:100%;
+	text-align: center;
+
+}
+.titulo {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-color:#424242;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+
+	
+	
+
+}
+.caixadetexto {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.coluna3 {
+    float: center;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	
+}
+.ClassImgPrincipal
+{
+	width:100%;
+	text-align: center;
+
+}
+.coluna2{
+	float: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom:70px;
+}
+
+}
+
+
+
+
+/*----------------------------------LAYOUT PARA CELULAR PEQUENO-------------------------------------------------*/
+
+/*query para celulares pequenos*/
+/*@media(min-width: 240px)
+{
+.coluna3 {
+	
+	width: 100%;
+
+}	
+.ClassImgPrincipal
+{
+ width:90%;
+
+display: flex;
+justify-content: center;
+}
+
+}
+*/
+/*--------------------------------------------FIM INDEX------------------------------------------------------*/
+
+
+
+/*--------------------------------------------PAGINA DOS CURSOS------------------------------------------------------*/
+
+/*---------------------------------------------LAYOUT PAG. CURSO>ADM-------------------------------------*/
+
+.titulo2adm{
+	margin-top: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-color:#424242;
+	font-family: 'titillium_web';
+}
+.grade_curso{
+	display:inline-flex;
+	width: 100%;
+	height: auto;	
+	flex-direction: row;
+	justify-content: center;
+}
+.grade h2 p section{
+	width: 300px;
+}
+.grade h2{
+	display: flex;
+	justify-content: center;
+}
+.conteudoadm{
+		margin-top:10%;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		padding:20 0px;
+		font-family: 'titillium_web';
+		color:#424242;
+	
+}
+.tituloadm{
+	font-size:32px;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:3px;
+	text-align:center;
+	margin-bottom:10px;
+	
+}
+	
+.caixadetextoadm{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grade h2{
+	font-size:23px;
+	display: flex;
+
+}
+.grade p{
+	font-size: 18px;
+}
+
+.imgadm{
+	padding-left:30px;
+	padding-right:30px;
+	width: 100%;
+	float: center;
+	margin-bottom: 5%;
+}
+.colunaadm{
+	float: left;
+	width:50%;
+	box-sizing: border-box;
+	padding-right:10%;
+	margin-bottom: 70px;
+	text-align:justify;
+}
+
+.grade {
+	display: block;
+	float: justify;
+	text-align: center;
+	width: 500px;
+	padding:10px;
+	height: auto;
+	border:.7px solid #e8eaf9;
+	margin: 10px 20px;
+}
+
+.grade a:link, a:visited, a:active {
+	text-decoration: none;
+}
+
+.grade h2{
+	display: flex;
+	margin:0;
+	padding: 5px;
+}	
+a:hover {
+	text-decoration: underline;  
+	color:#000; 
+	font-size:103%; 	
+	}
+	
+
+/*----------------------------------- fim --------------------------------------*/
+
+/*-------------------PAGINA DAS DISCIPLINAS----------------*/
+.ClassImgDisciplinas{
+	text-align: center;
+	width:40%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+	text-align:center;
+}
+@media screen and (max-width: 1300px) {
+.ClassImgDisciplinas{
+
+	margin-left: 20px;
+	text-align: center;
+	width:40%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-bottom:35px;
+
+}
+
+@media screen and (max-width: 480px) {
+.ClassImgDisciplinas{
+
+	width:100%;
+	text-align: center;
+
+}
+
+
+
+/*------------------------------------------FORMULARIO - PADRÃO---------------------------------------*/
+
+/* Configuração do formulario de cadastro */
+
+
+.FrmCadastro{
+width:100%;
+float:left;
+
+}
+/*designer do input , para atingir um campo em especifico, basta colocar [type="tipo"] na frente da tag input*/
+.FrmCadastro input {
+width:40%;
+margin-left:20px;
+margin-right:20px;
+vertical-align:left;
+}
+.FrmCadastro label {
+
+float:left;
+vertical-align:left;
+}
+
+
+.FrmCadastro input[type="email"] {
+width:50%;
+margin-left:20px;
+margin-right:20px;
+vertical-align:left;
+}
+.FrmCadastro input[name="endereco"] {
+width:50%;
+margin-left:2px;
+margin-right:20px;
+vertical-align:left;
+}
+/*configuração do botão */
+.botao{
+margin-left:10px;
+margin-right:10px;
+margin-top:1px;
+
+}
+/* Define a configuração do campo input */
+.PgCadastro input{
+padding-left:20px;
+color:#292929;
+font-size:18px;
+background-color:#e9e9e9;
+border:1px solid #e9e9e9;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+height:40px;
+margin-bottom:20px;
+border-bottom:1px solid #ccc;
+border-left:1px solid #ccc;
+	
+}
+/*designer do botão*/
+.botao{
+border-radius:4px;
+color:#fff;
+padding:2px 40px;
+height:40px;
+margin-top:18px;
+opacity:0.9;
+margin-bottom:20px;
+cursor:pointer;
+background:#b22222;
+display:inline-block;
+border:none;
+border-bottom:1px solid #500707;
+border-right: 1px solid #500707;
+margin-left:50%;
+}
+.botao{
+opacity:1.0;
+transition:1s;
+}
+/* esta classe serve para pular linha de uma label para outra */
+.row{
+	clear:both;
+}
+
+
+
+
+
+
