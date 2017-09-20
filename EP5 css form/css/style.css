@@ -361,6 +361,10 @@ transition:1s;
 	margin-top:200px;
 	
 }
+.ClassImgPrincipal{
+	width: 96%;
+	margin-left: 15px;
+}
 .coluna3 {
 	
 	float: left;
@@ -440,17 +444,6 @@ transition:1s;
 	font-color:#424242;
 	
 }
-
-.ClassImgPrincipal
-    {
-	text-align: center;
-	width:96%;
-	padding-left: auto;
-	padding-right: auto;
-	margin-bottom:35px;
-	text-align:center;
-	margin-top:100px;
-     } 
 	 
 section {
  clear:both;
@@ -543,16 +536,6 @@ section {
 
 
 }
-.ClassImgPrincipal
-{ 
-	margin-left: 20px;
-	text-align: center;
-	width:100%;
-	padding-left: auto;
-	padding-right: auto;
-	margin-bottom:35px;
-
-}
 
 }
 
@@ -611,16 +594,33 @@ section {
 	
 	
 }
-.ClassImgPrincipal
-{
-	width:100%;
-	text-align: center;
-
-}
 
 }
 
 
+
+@media screen and (max-width: 580px) {
+	.img_campus{
+		width: 330px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.caixa_contato{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+
+	}
+	
+}
+
+@media screen and (max-width: 1100px) {
+.conteudocaixadetexto{
+	display: flex;
+	flex-direction: column;
+	}
+	
+}
 
 
 /*----------------------------------LAYOUT PARA CELULAR PEQUENO-------------------------------------------------*/
@@ -632,12 +632,7 @@ section {
 	
 	width: 100%;
 }	
-.ClassImgPrincipal
-{
- width:90%;
-display: flex;
-justify-content: center;
-}
+
 }
 */
 /*--------------------------------------------FIM INDEX------------------------------------------------------*/
@@ -778,13 +773,6 @@ a:hover {
 	text-align:center;
 }
 
-@media screen and (max-width: 1100px) {
-.conteudocaixadetexto{
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	
-}
 @media screen and (max-width: 1300px) {
 .ClassImgDisciplinas{
 
@@ -801,7 +789,8 @@ a:hover {
 .ClassImgDisciplinas{
 
 	width:100%;
-	text-align: center;]
+	text-align: center;
+
 }
 
 }
